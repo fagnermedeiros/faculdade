@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Básico</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h1,
+    h2 {
+        font-weight: bold;
+    }
+
+    ul li {
+        list-style-type: none;
+        display: inline;
+        padding: 12px;
+    }
+
+    #galeria {
+        text-align: center;
+    }
+
+    #introducao p {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        margin: 0;
+    }
+</style>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="col-md-6" style="margin-left: 19px;">Bem-vindo ao Meu Site</h1>
+        <ul class="col-md-6">
+            <li>Home</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>
+    </header>
+    <main class="container mt-5">
+        <section id="introducao" class="mb-5">
+            <h2 class="text-center">Meu Pojeto</h2>
+            <p class="text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+        <section id="galeria" class="mb-5">
+            <h2 class="text-center mb-4">Galeria de Imagens</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://medfocus.com.br/wp-content/uploads/2023/10/mulher-bonita-e-esportista-fazendo-exercicios-de-ioga-no-parque-300x200.jpg" class="img-fluid mb-4" alt="Imagem 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.holoweb.net/~liam/pictures/2007-06-29-san-vivaldo/pages/img_4979/img_4979-300x200.jpg" class="img-fluid mb-4" alt="Imagem 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://blog.viajarfazbem.com/wp-content/webp-express/webp-images/uploads/2021/10/OspontosturisticosimperdiveisemFernandodeNoronhaSancho-300x200.jpg.webp" class="img-fluid mb-4" alt="Imagem 3">
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2 class="text-center mb-4">Contato</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="3" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2023 Meu Site Básico. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
